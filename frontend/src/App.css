@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	user-select: none;
+}
+
+body {
+	font-size: 10px;
+	/* font-family: "Raleway", sans-serif; */
+	font-family: "Lexend", sans-serif;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+}
+
+li {
+	list-style: none;
+}
+i {
+	transform: translateY(45%);
+}
+a {
+	text-decoration: none;
+}
+.nav {
+	display: flex;
+}
+
+.logoIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1rem;
+}
+
+.logo {
+	width: 1.1rem;
+	height: 1.1rem;
+	color: white;
+	margin-right: 5px;
+}
+
+.wordmark {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+.links {
+	list-style: none;
+	margin-left: 2.5rem;
+	float: left;
+	color: #a0a0a0;
+	font-size: 0.9rem;
+	font-weight: 800;
+}
+
+.links:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.signin {
+	color: #0099ff;
+}
+
+.signup_btn {
+	background-color: #0099ff;
+	color: white;
+	padding: 0.55rem 1.1rem;
+	border-radius: 200px;
+}
+
+.mainblock {
+	position: relative;
+	display: block;
+	text-align: center;
+	padding: 2rem;
+	height: 92vh;
+	background-image: linear-gradient(to bottom left, #181818, #172753);
+	border-bottom: 4px solid #004ffc;
+}
+
+.intro {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.heading {
+	font-size: 5rem;
+	font-weight: 900;
+	color: white;
+	transition: 0.4s;
+}
+
+.subs {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #a0a0a0;
+}
+
+@media only screen and (max-width: 500px) {
+	.heading {
+		font-size: 3.5rem;
+	}
+	.subs {
+		font-size: 1.2rem;
+	}
+}
+
+.predict {
+	display: inline-block;
+	margin-top: 2.1rem;
+	background-color: #0099ff;
+	color: white;
+	border: none;
+	padding: 0.9rem 2rem;
+	border-radius: 200px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 500;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.predict:hover {
+	background-color: #0099ffda;
+	transform: translateY(-3px);
+	box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.685);
+}
+.predict:focus {
+	outline: none;
+}
+.predict:active {
+	transform: translateY(3px);
+	box-shadow: 0 0.2rem 0.5rem black;
+}
+
+.idea {
+	animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+	0% {
+		color: white;
+	}
+	10% {
+		color: white;
+	}
+	20% {
+		color: white;
+	}
+	30% {
+		color: rgb(231, 67, 95);
+	}
+	50% {
+		color: rgb(253, 253, 116);
+	}
+	70% {
+		color: rgb(125, 178, 221);
+	}
+	80% {
+		color: white;
+	}
+
+	90% {
+		color: rgb(139, 230, 139);
+	}
+	100% {
+		color: rgb(191, 245, 191);
+	}
+}
+
+.section-2 {
+	background-color: #dfdfdf;
+	height: fit-content;
+	padding: 2rem;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	padding: 5px;
+	display: inline-block;
+}
+
+.title::before {
+	content: "";
+	position: absolute;
+	background-color: black;
+	width: 490px;
+	height: 3px;
+	left: 0;
+	transform: translateY(60px);
+}
+
+.form {
+	margin: 0 auto;
+	width: 70%;
+	padding: 2rem;
+	height: fit-content;
+	border-radius: 12px;
+	background-color: white;
+	box-shadow: 0 10px 20px rgba(221, 221, 221, 0.322);
+}
+
+@media only screen and (max-width: 510px) {
+	.title {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+	.title::before {
+		width: 340px;
+		height: 2.5px;
+		transform: translateY(40px);
+	}
+	.form {
+		width: 90%;
+	}
+}
+
+.input-wrapper {
+	display: inline-block;
+	margin: 20px;
+}
+
+.input {
+	border: none;
+	background-color: #dfdfdf;
+	padding: 10px 20px 8px 20px;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+	.title {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	.title::before {
+		width: 310px;
+		height: 2px;
+		transform: translateY(40px);
+	}
+	.form {
+		padding: 1rem;
+		width: 90%;
+	}
+	.input {
+		font-size: 0.8rem;
+		padding: 8px 12px 6px 12px;
+	}
+}
+
+input,
+label {
+	display: block;
+	font-size: 1rem;
+}
+
+.footer {
+	width: 100vw;
+	max-width: 100%;
+	padding-bottom: 50px;
+	background-image: linear-gradient(to top, #172753, black);
+	border-top: 4px solid #004ffc;
+}
+.footer-wrapper {
+	padding-top: 80px;
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-title,
+.follow {
+	color: rgba(255, 255, 255, 0.603);
+	font-weight: 800;
+	font-size: 2rem;
+	width: fit-content;
+}
+
+.follow {
+	font-weight: 500;
+	text-align: left;
+}
+
+.icon {
+	position: relative;
+	color: white;
+	font-size: 1.2rem;
+	border: 1px solid white;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	list-style: none;
+	margin: 5px;
+}
+
+@media (max-width: 400px) {
+	.icon {
+		font-size: 1rem;
+		width: 35px;
+		height: 35px;
+	}
+	.resume-btn {
+		text-decoration: none;
+		font-size: 1rem;
+		padding: auto 20px;
+	}
+}
+
+a {
+	color: white;
+}
+
+.follow-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: fit-content;
+}
+
+.social {
+	display: flex;
+	width: fit-content;
+	flex-direction: row;
+}
+
+@media (max-width: 500px) {
+	.footer-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer-title {
+		transform: translateX(40px);
+		width: fit-content;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+}
+
+.main-faq {
+	padding: 2rem;
+	background-image: linear-gradient(to bottom left, #181818, #172753);
+	border-bottom: 4px solid #004ffc;
+}
+
+.faq {
+	display: block;
+	font-size: 3rem;
+	margin-top: 25px;
+	font-weight: 800;
+}
+.faq::before {
+	width: 700px;
+}
+
+@media (max-width: 500px) {
+	.faq {
+		font-size: 1.2rem;
+	}
+	.faq::before {
+		width: 300px;
+	}
+}
+
+.faq-body {
+	padding: 20px;
+	padding-top: 0;
+}
+
+.question {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.ans {
+	font-size: 1.5rem;
+	padding: 16px;
+	padding-top: 5px;
+	color: rgb(49, 49, 49);
+	margin-bottom: 25px;
+}
+
+.report-card {
+	margin: 20px auto;
+	width: 70%;
+	padding: 2rem;
+	height: fit-content;
+	border-radius: 12px;
+	background-color: white;
+	box-shadow: 0 10px 20px rgba(221, 221, 221, 0.322);
+}
+
+.analysis {
+	padding: 20px;
+	font-size: 3rem;
+}
+.shine {
+	font-weight: 700;
+	animation: colorChange2 10s infinite;
+}
+
+@media only screen and (max-width: 400px) {
+	.report-card {
+		padding: 1rem;
+		width: 90%;
+	}
+	.analysis {
+		padding: 10px;
+		font-size: 1.5rem;
+	}
+}
+@keyframes colorChange2 {
+	to {
+		color: rgb(40, 155, 130);
+	}
+
+	from {
+		color: rgb(5, 92, 150);
+	}
+}
